@@ -189,9 +189,9 @@ const classes = [
 // //CODE HERE
 
 for (let i = 0; i < classes.length; i++) {
-    for (let key in obj) {
-        if (obj[key] === true) { 
-            obj[key] = false
+    for (let key in classes[i]) {
+        if (classes[i][key] === true) { 
+            classes[i][key] = false
         }
     }
 }
@@ -211,7 +211,21 @@ let pairsArray = []
 
 //CODE HERE
 
-    
+// for (let i = 0; i < lettersToPair.length; i++) {
+//     for (let n = 1; i < lettersToPair.length; i++) {
+//         if (i === n) {
+//             pairsArray.push[i][n]
+//         }
+//     }
+// }
+
+for (let i = 0; i < lettersToPair.length; i++) {
+    for (let n = i + 1; n < lettersToPair.length; n++) {
+        if (lettersToPair[i] === lettersToPair[n]) {
+            pairsArray.push([i,n])   
+        }
+    }
+}
 
 //////////////////////////////////PROBLEMS 11-14//////////////////////////////////
 /*
