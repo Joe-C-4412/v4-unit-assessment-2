@@ -23,7 +23,7 @@ const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']]
 
 //CODE HERE
 
-let foundZ = nestedLetters
+let foundZ = nestedLetters[5][2][1]
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -190,7 +190,7 @@ const classes = [
 
 for (let i = 0; i < classes.length; i++) {
     for (let key in obj) {
-        if (obj[key] = true) { 
+        if (obj[key] === true) { 
             obj[key] = false
         }
     }

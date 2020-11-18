@@ -13,9 +13,9 @@ the font is called 'nunito' and can be found on google fonts
 
 */
 
-* header {
+header {
     box-sizing: border-box;
-    background-color: black(37,37,37);
+    background-color: rgb(37, 37, 37);
     height: fit-content;
     /* height: 6vh;
     width: 100%; */
@@ -32,6 +32,14 @@ the font is called 'nunito' and can be found on google fonts
     width: fit-content;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
+}
+
+.right-header-container {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
 .home-button {
@@ -129,3 +137,4 @@ the font is called 'nunito' and can be found on google fonts
     height: 10px;
     width: 10px;
 }
+
