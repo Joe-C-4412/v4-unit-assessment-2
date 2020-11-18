@@ -16,8 +16,9 @@ the font is called 'nunito' and can be found on google fonts
 * header {
     box-sizing: border-box;
     background-color: black(37,37,37);
-    height: 6vh;
-    width: 100%;
+    height: fit-content;
+    /* height: 6vh;
+    width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,9 +26,9 @@ the font is called 'nunito' and can be found on google fonts
 }
 
 .header-title {
-    
+    margin: 5px;
     background-color: blueviolet;
-    height: 80%;
+    height: fit-content;
     width: fit-content;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
@@ -37,18 +38,90 @@ the font is called 'nunito' and can be found on google fonts
     background-color: chartreuse;
     text-align: center;
     width: fit-content;
+    padding: 10px;
 
 }
 
 .topics-button {
-
+    background-color: chartreuse;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
 }
 
 .subscribe-button {
-
+    background-color: chartreuse;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    position: relative;
 }
 
 .sign-in {
+    background-color: chartreuse;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+}
+
+.article-title {
+    background-color: cyan;
+    height: fit-content;
+    font-size: x-large;
+}
+
+.article {
+    height: fit-content;
+    width: fit-content;
+    background-color: crimson;
+}
+
+.your-name {
+    height: 30px;
+    width: fit-content;
+    background-color: darkkhaki;
+    box-shadow: darkgray 5px;
+}
+
+.popular-articles {
+    height: 30px;
+    width: fit-content;
+    background-color: darkkhaki;
+}
+
+
+.image-gallery-title {
+    background-color: cyan;
+    height: fit-content;
+    font-size: x-large; 
+}
+
+.image-container {
+    background-color: darkgrey;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+#placeholder {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 200px;
+    width: 200px; 
+
+}
+
+.footer-note {
+    background-color: cyan;
+    height: 50px;
+    font-display: center;
+    font-size: smaller;
 
 }
 
