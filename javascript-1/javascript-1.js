@@ -242,6 +242,12 @@ for (let i = 0; i < lettersToPair.length; i++) {
 
 //CODE HERE
 
+function Dog( name, age, breed, tricks ) {
+    this.name = name;
+    this.age = age;
+    this.breed = breed;
+    this.tricks = tricks;
+}
 
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
@@ -251,6 +257,7 @@ for (let i = 0; i < lettersToPair.length; i++) {
 
 //CODE HERE
   
+let fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake']) 
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -261,6 +268,15 @@ for (let i = 0; i < lettersToPair.length; i++) {
 
 //CODE HERE
 
+function bark () {
+    return `${ this.name } says bark!` 
+}
+
+// function bark(fidoSpeak) {
+//     return this.name + ` says bark!`
+// }
+
+// bark.call(Name)
 
 /*
     Invoke the call method on bark, passing in fido as the context
@@ -268,18 +284,23 @@ for (let i = 0; i < lettersToPair.length; i++) {
 */
 
 //CODE HERE
-  
-  
+
+let fidoSpeak = bark.call(fido)
+
 ////////////////////PROBLEM 13////////////////////
 /*
     Write a function called 'teachTrick' that will take in one parameter, trick, 
     and push that trick into a trick's array and return the updated array.
-    You will give context to 'techTrick' using the .bind method.
+    You will give context to 'teachTrick' using the .bind method.
     Tricks will come from that context, so you should reference 'this.tricks' to access the correct array.
 */
 
 //CODE HERE
 
+function teachTrick (trick) {
+    const tricksArray = []
+
+}
 
 /*
     Invoke the bind method on teachTrick, passing in fido as the context and the string 'stay' as a trick.
@@ -288,7 +309,8 @@ for (let i = 0; i < lettersToPair.length; i++) {
 
 //CODE HERE
   
-  
+
+
 ////////////////////PROBLEM 14////////////////////
 /*
     Write a function called 'dogIntro' that will take in two parameters, treat and toy,
@@ -318,6 +340,13 @@ for (let i = 0; i < lettersToPair.length; i++) {
 
 //CODE HERE
 
+function Phone(brand, model, storage, color, sold) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.sold = sold;
+}
   
 /*
     Next make three new phones using your constructor function.
@@ -331,11 +360,11 @@ for (let i = 0; i < lettersToPair.length; i++) {
 */
 
 //CODE HERE
-  // let phone1 = 
+  let phone1 = new Phone('iPhone', 'X', 16, 'Red', false)
   
-  // let phone2 = 
+  let phone2 = new Phone('Galaxy', 'S', 33, 'Black', false)
   
-  // let phone3 = 
+  let phone3 = new Phone('BlackBerry', 'Q', 22, 'Blue', false)
   
 /*
     Last, add a prototype method to Phone.
@@ -347,4 +376,7 @@ for (let i = 0; i < lettersToPair.length; i++) {
 
 //CODE HERE
 
-  
+  Phone.prototype.sell = function() {
+      this.sold = true
+    return `${this.brand} ${this.model} has been sold.` 
+  }
