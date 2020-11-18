@@ -188,9 +188,9 @@ const classes = [
 
 // //CODE HERE
 
-for (let key in classes) {
+for (let i = 0; i < classes.length; i++) {
     for (let key in obj) {
-        if (obj[key] = true { 
+        if (obj[key] = true) { 
             obj[key] = false
         }
     }
