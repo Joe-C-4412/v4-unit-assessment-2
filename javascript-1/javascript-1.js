@@ -299,7 +299,8 @@ let fidoSpeak = bark.call(fido)
 
 function teachTrick (trick) {
     const tricksArray = []
-
+    tricksArray.push(trick)
+    return tricksArray
 }
 
 /*
@@ -309,7 +310,7 @@ function teachTrick (trick) {
 
 //CODE HERE
   
-
+let teachStay = teachTrick.bind(fido, 'stay')
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -321,7 +322,9 @@ function teachTrick (trick) {
 
 //CODE HERE
 
-
+function dogIntro (treat, toy) {
+    return `${this.name} is a ${this.breed} that loves ${this.treat} and their ${this.toy}`
+}
 /*
     Invoke the apply method on dogIntro, passing in fido as the context 
     with 'chicken' as the treat and 'tennis ball' as the toy
@@ -330,6 +333,7 @@ function teachTrick (trick) {
 
 //CODE HERE
   
+let fidoIntro = dogIntro.apply(fido, this.breed, 'chicken', 'tennis ball')
 
 ////////////////////PROBLEM 15////////////////////
 /*
