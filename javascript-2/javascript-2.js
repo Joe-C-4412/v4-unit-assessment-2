@@ -37,6 +37,17 @@ let foods = [
 
 //CODE HERE
 
+
+
+// for (let i = 0; i < classes.length; i++) {
+//   foods.forEach(function(element, index, array)
+
+// }
+
+// for (let key in classes[i]) {
+//   if (classes[i][key] === true) { 
+//       classes[i][key] = false
+
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -81,6 +92,11 @@ const products = [
 */
 
 //CODE HERE
+
+let saleProducts = products.map(function(element) {
+  return element.price * .75
+})
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
