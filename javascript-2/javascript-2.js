@@ -38,6 +38,10 @@ let foods = [
 //CODE HERE
 
 
+foods.forEach((e, i, a) => {
+  const { carbs, protein, fat } = e
+  a[i] = {...e, calories: carbs * 4 + protein * 4 + fat * 9}
+})
 
 // for (let i = 0; i < classes.length; i++) {
 //   foods.forEach(function(element, index, array)
@@ -108,6 +112,11 @@ let saleProducts = products.map(function(element) {
 
 //CODE HERE
 
+let blueProducts = saleProducts.filter(function(e, i, a) {
+  // if (e[i] === 'blue')
+  
+})
+
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -116,6 +125,10 @@ let saleProducts = products.map(function(element) {
 */
 
 //CODE HERE
+
+let orderTotal = blueProducts.reduce(function(acc, element, index, array) {
+  return (acc += element)
+}, 0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -147,6 +160,8 @@ const shippingInfo = {
 
 //CODE HERE
 
+const helensInfo = Object.assign(contactInfo, shippingInfo)
+
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.
@@ -156,12 +171,17 @@ const shippingInfo = {
 
 //CODE HERE
 
+const ellensInfo = {...helensInfo, name: 'Ellen', email: 'ellen@email.com'}
+
+
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
 //CODE HERE
+
+
 
 ////////////////////PROBLEM 8////////////////////
 /*
