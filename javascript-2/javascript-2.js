@@ -182,6 +182,7 @@ const ellensInfo = {...helensInfo, name: 'Ellen', email: 'ellen@email.com'}
 
 //CODE HERE
 
+const {name, phoneNumber, email, street, city, state, zipCode} = ellensInfo
 
 
 ////////////////////PROBLEM 8////////////////////
