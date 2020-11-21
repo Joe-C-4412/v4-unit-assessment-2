@@ -98,7 +98,8 @@ const products = [
 //CODE HERE
 
 let saleProducts = products.map(function(element) {
-  return element.price * .75
+  element.price = element.price * .75
+  return element
 })
 
 
